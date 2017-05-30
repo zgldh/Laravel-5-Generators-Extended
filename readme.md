@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/laracasts/Laravel-5-Generators-Extended.svg?branch=master)](https://travis-ci.org/laracasts/Laravel-5-Generators-Extended)
 
+This is just a fix for Laravel 5.4 cause the original package owner didn't do that.
+
 If you're familiar with my [Laravel 4 Generators](https://github.com/JeffreyWay/Laravel-4-Generators), then this is basically the same thing - just upgraded for Laravel 5.
 
 L5 includes a bunch of generators out of the box, so this package only needs to add a few things, like:
