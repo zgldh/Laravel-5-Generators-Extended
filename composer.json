@@ -1,6 +1,6 @@
 {
-  "name": "laracasts/generators",
-  "description": "Extend Laravel 5's generators.",
+  "name": "zgldh/laracasts-generators",
+  "description": "Extend Laravel 5's generators. For Laravel 5.4",
   "keywords": ["laravel", "generators"],
   "license": "MIT",
   "authors": [
