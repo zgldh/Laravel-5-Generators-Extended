@@ -59,6 +59,11 @@ class MigrationMakeCommand extends Command
         $this->files = $files;
         $this->composer = app()['composer'];
     }
+    
+    public function handle()
+    {
+        return $this->fire();
+    }
 
     /**
      * Execute the console command.
