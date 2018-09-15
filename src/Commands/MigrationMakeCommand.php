@@ -1,7 +1,5 @@
 <?php
-
 namespace Laracasts\Generators\Commands;
-
 use Illuminate\Console\Command;
 use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
@@ -52,8 +50,7 @@ class MigrationMakeCommand extends Command
      * @param Filesystem $files
      * @param Composer $composer
      */
-    public function __construct(Filesystem $files)
-    {
+    public function __construct(Filesystem $files)     {
         parent::__construct();
 
         $this->files = $files;
@@ -70,15 +67,14 @@ class MigrationMakeCommand extends Command
         $this->meta = (new NameParser)->parse($this->argument('name'));
 
         $this->makeMigration();
-        $this->makeModel();
-    }
+        $this->makeModel();     }
 
     /**
      * Get the application namespace.
      *
      * @return string
      */
-    protected function getAppNamespace()
+    protected function getAppNamespace( )
     {
         return Container::getInstance()->getNamespace();
     }
@@ -90,7 +86,8 @@ class MigrationMakeCommand extends Command
     {
         $name = $this->argument('name');
 
-        if ($this->files->exists($path = $this->getPath($name))) {
+        if ($this->files->exists($path = $this->getPath($name)))
+        {
             return $this->error($this->type . ' already exists!');
         }
 
